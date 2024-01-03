@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+</head>
+<body>
+    <header>
+        <h1>Event Registration</h1>
+    </header>
+
+    <section>
+        <h2>Annual Gala Celebration</h2>
+        <p>Thank you for your interest.Please fill out the registration form below:</p>
+
+        <form action="javascript:void(0);" onsubmit="redirectToHome()"> 
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Year:</label>
+            <input type="number" id="year" name="year" required>
+            <br>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <br>
+            <input type="submit" value="Submit Registration">
+        </form>
+        <script>
+            function redirectToHome() {
+                // Simulating successful sign-in
+                alert('registration successful!');
+                window.location.href = 'home.html';
+                return false; // Prevents form submission
+            }
+        </script> 
+        
+    </section>
+    
+</body>
+</html>
